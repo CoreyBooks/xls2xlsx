@@ -30,10 +30,17 @@ jobs:
       - name: Build standalone Python script
         run: python build_standalone.py
 
+      - name: Copy VBS scripts to dist
+        run: |
+          copy VBS_vision\xls2xlsx.vbs dist\
+          copy VBS_vision\xls2xlsx_en.vbs dist\
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             dist/xls2xlsx.exe
             dist/xls2xlsx.py
+            dist/xls2xlsx.vbs
+            dist/xls2xlsx_en.vbs
           generate_release_notes: true
