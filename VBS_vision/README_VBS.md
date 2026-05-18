@@ -1,6 +1,7 @@
 # XLS -> XLSX 批量转换工具（VBScript 版）
 
 `xls2xlsx` 的独立 VBScript 实现。不需要安装 Python，只需系统上装有 Microsoft Excel 即可运行。
+如遇到显示字符错乱可能是由于编码格式引起的，可改用xls2xlsx_en.vbs
 
 > **范围：** 本 README 针对 VBScript 版本（`xls2xlsx_en.vbs`）。Python 版本请查看主项目 [`README.md`](./README.md)。
 
